@@ -19,7 +19,7 @@ const newStyles = makeStyles(theme=> ({
         margin: "10% 3% 3% 5%",
         color: "#ffd460",
         textAlign: "left",
-        fontSize: "2.5rem"
+        fontSize: "3.5rem"
     },
 
     icon: {
@@ -49,26 +49,26 @@ const About = () => {
                     <Typography variant="h2" className={style.title}>
                         Zeeshan Ashraf
                     </Typography>
-                    <Typography variant="h4">
+                    <Typography >
                         Mb: +91-7004858548 
                     </Typography>
-                    <Typography variant="h4">
+                    <Typography >
                         Email: ashraf2k1zeeshan@gmail.com
                     </Typography>
                     <br></br>
-                    <Typography variant="h5">
+                    <Typography>
                         Kokar, Ranchi-834001
                         <br></br>
                         Jharkhand
                     </Typography>
                     <br></br>
-                    <Typography variant="h5">
+                    <Typography>
                         Student of BIT, Sindri.
                     </Typography>
-                    <Typography variant="h5">
+                    <Typography >
                         Electronics and Communication Engineering.
                     </Typography>
-                    <Typography variant="h5">
+                    <Typography >
                         Member of Hacking And Coding Club, BIT-Sindri. 
                     </Typography>
                 </Box>
