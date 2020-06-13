@@ -120,7 +120,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs = {12} sm={8} md={6}>
+                <Grid item xs = {12} sm={8} md={6} className={styles.myStyle}>
                     <Card className={cx(styles.root, shadowStyles.root)}>
                         <CardMedia
                             className={styles.media}
@@ -141,7 +141,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs = {12} sm={8} md={6}>
+                <Grid item xs = {12} sm={8} md={6} className={styles.myStyle}>
                     <Card className={cx(styles.root, shadowStyles.root)}>
                         <CardMedia
                             className={styles.media}
@@ -162,7 +162,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs = {12} sm={8} md={6}>
+                <Grid item xs = {12} sm={8} md={6} className={styles.myStyle}>
                     <Card className={cx(styles.root, shadowStyles.root)}>
                         <CardMedia
                             className={styles.media}
