@@ -69,7 +69,7 @@ const About = () => {
                         Electronics and Communication Engineering.
                     </Typography>
                     <Typography >
-                        Member of Hacking And Coding Club, BIT-Sindri. 
+                        Member of Hackathon And Coding Club, BIT-Sindri. 
                     </Typography>
                 </Box>
             </Grid>

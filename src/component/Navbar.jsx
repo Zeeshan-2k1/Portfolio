@@ -21,12 +21,12 @@ import Footer from './Footer';
 import avatar from "../images/Avatar.jpeg";
 
 import {
-    ArrowBack,
     AssignmentInd,
     Home,
     Apps,
     ContactMail
 } from "@material-ui/icons";
+import TocIcon from '@material-ui/icons/Toc';
 
 //CSS styles
 
@@ -104,7 +104,7 @@ const Navbar = () => {
             <AppBar position = "static" style={{background: "#212121"}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("left", true)}>
-                        <ArrowBack style={{ color: "#f07b3f"}} />                   
+                        <TocIcon style={{ color: "#f07b3f"}} />                   
                     </IconButton>
                     <Typography variant="h5" style={{color: "#ffd460"}}>
                         Portfolio
