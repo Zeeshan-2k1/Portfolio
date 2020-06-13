@@ -1,0 +1,7 @@
+body {
+    background: url(./images/Coffee.jpg);
+    -webkit-background: cover;
+    -moz-background: cover;
+    -o-background: cover;
+    background: cover;
+}
