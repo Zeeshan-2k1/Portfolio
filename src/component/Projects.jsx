@@ -1,11 +1,8 @@
 import React from 'react';
-import Navbar from './Navbar';
 import {
   Box,
   Grid,
   Card,
-  CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
   Button,
@@ -21,10 +18,10 @@ import { useOverShadowStyles } from '@mui-treasury/styles/shadow/over';
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   mainContainer: {
     height: '100%',
+    marginTop: '10%',
   },
   cardContainer: {
     maxWidth: 345,
-    margin: '3rem',
     margin: ' 5rem auto',
   },
   root: {
@@ -85,6 +82,11 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   myStyle: {
     margin: '2rem auto 3rem',
   },
+  heading: {
+    fontSize: '4rem',
+    color: '#fff',
+    marginBottom: '2rem',
+  },
 }));
 
 const Portfolio = () => {
@@ -97,7 +99,9 @@ const Portfolio = () => {
 
   return (
     <Box component="div" className={styles.mainContainer}>
-      <Navbar />
+      <Typography className={styles.heading} variant="h1">
+        Projects
+      </Typography>
       <Grid container justify="center" alignItems="center">
         <Grid item xs={12} sm={8} md={6} className={styles.myStyle}>
           <Card className={cx(styles.root, shadowStyles.root)}>
@@ -151,7 +155,7 @@ const Portfolio = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={8} sm={6} className={styles.myStyle}>
+        <Grid item xs={12} md={6} sm={8} className={styles.myStyle}>
           <Card className={cx(styles.root, shadowStyles.root)}>
             <CardMedia
               className={styles.media}
@@ -177,7 +181,7 @@ const Portfolio = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={8} md={6} className={styles.myStyle}>
+        <Grid item xs={12} md={6} sm={8} className={styles.myStyle}>
           <Card className={cx(styles.root, shadowStyles.root)}>
             <CardMedia
               className={styles.media}
@@ -190,11 +194,39 @@ const Portfolio = () => {
                 classes={contentStyles}
                 overline={'A.I (Face-api)'}
                 heading={'Face-Detection'}
-                body={'Tells the mood of the person.'}
+                body={
+                  'Tells the mood of the person. Its uses a third party API,its just a use of API.'
+                }
               />
               <Button
                 className={buttonStyles}
                 href="https://github.com/Zeeshan-2k1/Face-Recognition"
+              >
+                View
+              </Button>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={8} md={6} className={styles.myStyle}>
+          <Card className={cx(styles.root, shadowStyles.root)}>
+            <CardMedia
+              className={styles.media}
+              image={
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2000px-Git_icon.svg.png'
+              }
+            />
+            <CardContent>
+              <TextInfoContent
+                classes={contentStyles}
+                overline={'Streams(React)'}
+                heading={'Streaming App'}
+                body={
+                  'Its an streaming made using react,redux and context. Also using RTMP server'
+                }
+              />
+              <Button
+                className={buttonStyles}
+                href="https://github.com/Zeeshan-2k1/Streams"
               >
                 View
               </Button>

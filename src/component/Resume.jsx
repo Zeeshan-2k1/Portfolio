@@ -120,6 +120,11 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     padding: '0',
   },
+  about: {
+    color: '#ffd460',
+    fontSize: '2rem',
+    padding: ' 2rem auto',
+  },
 }));
 
 const Resume = () => {
@@ -128,6 +133,14 @@ const Resume = () => {
     <>
       <Zoom>
         <Box component="header">
+          <Typography style={{ fontSize: '3rem', color: '#fff' }}>
+            About Me:
+          </Typography>
+          <Typography className={classes.about}>
+            Sophomore at BIT, Sindri. B.Tech in ECE. Web and App Develper.
+            <br />
+            Learn. Code. Develop.
+          </Typography>
           <Box component="div" className={classes.line}>
             <Typography
               className={(classes.lineItem, classes.lineContent)}
@@ -195,98 +208,6 @@ const Resume = () => {
                 development.
               </Typography>
             </Box>
-          </Box>
-        </Box>
-
-        <Box component="div" className={classes.line}>
-          <Typography
-            className={(classes.lineItem, classes.lineContent)}
-            variant="h1"
-          >
-            Institution
-          </Typography>
-
-          <Box component="div" className={classes.lineItem}>
-            <Typography
-              variant="h4"
-              align="left"
-              className={classes.subHeading}
-            >
-              {' '}
-              Oxford Public School
-            </Typography>
-            <Typography variant="h5" align="left" style={{ color: '#ffd460' }}>
-              Started my schooling career from this prestigious Institution.
-              Completed 10th Standard with 10 CGPA. Took PCM in Higher Secondary
-              and passed it with 89.2%.
-            </Typography>
-          </Box>
-
-          <Box component="div" className={classes.lineItem}>
-            <Typography
-              variant="h4"
-              align="left"
-              className={classes.subHeading}
-            >
-              {' '}
-              BIT, Sindri
-            </Typography>
-            <Typography variant="h5" align="left" style={{ color: '#ffd460' }}>
-              Pursing B.Tech in Electronic and Communication Engineering.
-              Currently in 3rd semester.
-            </Typography>
-          </Box>
-
-          <Box component="div" className={classes.lineItem}>
-            <Typography
-              variant="h4"
-              align="left"
-              className={classes.subHeading}
-            >
-              {' '}
-              HNCC
-            </Typography>
-            <Typography variant="h5" align="left" style={{ color: '#ffd460' }}>
-              2nd Year Member. Work as a Web Developer.
-            </Typography>
-          </Box>
-        </Box>
-
-        <Box component="div" className={classes.line}>
-          <Typography
-            className={(classes.lineItem, classes.lineContent)}
-            variant="h1"
-          >
-            Fun Fact
-          </Typography>
-
-          <Box component="div" className={classes.lineItem}>
-            <Typography
-              variant="h4"
-              align="left"
-              className={classes.subHeading}
-            >
-              {' '}
-              Gaming
-            </Typography>
-            <Typography variant="h5" align="left" style={{ color: '#ffd460' }}>
-              Loves to play chess, mobile as well as PC games.
-            </Typography>
-          </Box>
-
-          <Box component="div" className={classes.lineItem}>
-            <Typography
-              variant="h4"
-              align="left"
-              className={classes.subHeading}
-            >
-              {' '}
-              Reading
-            </Typography>
-            <Typography variant="h5" align="left" style={{ color: '#ffd460' }}>
-              Reading about new technology and development plans. Also having
-              interest in poems and shayaris.
-            </Typography>
           </Box>
         </Box>
         <Typography className={classes.info} variant="h5">

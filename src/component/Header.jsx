@@ -5,6 +5,7 @@ import { Box, Typography } from '@material-ui/core';
 import Particles from 'react-particles-js';
 import SocialLinks from './SocialLinks';
 import Resume from './Resume';
+import Portfolio from './Projects';
 import Zoom from 'react-reveal/Zoom';
 
 const useStyles = makeStyles((theme) => ({
@@ -78,6 +79,7 @@ const Header = () => {
             strings={[
               'B.Tech',
               'Student',
+              'Open Source',
               'Coding-C++',
               'Web Dev',
               'Web Design',
@@ -93,6 +95,9 @@ const Header = () => {
           </Box>
         </Zoom>
         <Box className={classes.resume}>
+          <Zoom>
+            <Portfolio />
+          </Zoom>
           <Resume />
         </Box>
       </Box>
