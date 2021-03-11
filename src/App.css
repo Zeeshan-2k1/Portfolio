@@ -1,7 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
-  background-color: #000 !important;
+  background-color: #0b0b0e !important;
   -webkit-background: cover;
   -moz-background: cover;
   -o-background: cover;
   background: cover;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: skyblue;
+  letter-spacing: 1.2px;
+  margin-right: 2rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+  filter: grayscale(80%);
+}
+
+@media screen and (min-width: 1350px) {
+  img {
+    width: 60%;
+  }
 }
