@@ -64,7 +64,7 @@ export default function MyTerminal() {
             </p>
             <p>You can download my resume from the link below</p>
             <a
-              href="https://docs.google.com/document/d/1Xdsgurz-3poCa5rRmW7qju79vEicd7h2OLzPJ3KHs2U/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1eipf-8XRepxabg0wkwdqitwbyyme0CsM/view?usp=sharing"
               download
             >
               Download
