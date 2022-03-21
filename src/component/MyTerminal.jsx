@@ -43,7 +43,9 @@ export default function MyTerminal() {
 
             <h2>Experience: </h2>
             <ul>
-              <li>Intern at La Polo International</li>
+              <li>Javascript Developer Intern at Wingify</li>
+              <li>Full StackIntern at Cadworks Pvt. Ltd. </li>
+              <li>Full Stack Intern at La Polo International</li>
               <li>Member at Hackathon and Coding Club</li>
             </ul>
             <h2>Education: </h2>
