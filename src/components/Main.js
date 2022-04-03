@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
+import useWindowDimensions from '../config/useWindowDimension';
 import LogoComponent from '../subComponents/LogoComponent';
 import PowerButton from '../subComponents/PowerButton';
 import SocialIcons from '../subComponents/SocialIcons';
@@ -113,15 +114,6 @@ const Center = styled.button`
     display: ${(props) => (props.click ? 'none' : 'inline-block')};
     padding-top: 1rem;
   }
-
-  @media (max-width: 500px) {
-    svg {
-      height: 60px;
-      width: 60px;
-    }
-
-    top: 92.5%;
-  }
 `;
 
 const DarkDiv = styled.div`
@@ -138,8 +130,11 @@ const DarkDiv = styled.div`
 
 const Main = () => {
   const [click, setClick] = useState(false);
+  const { height: WindowHeight, width: WindowWidth } = useWindowDimensions();
 
   const handleClick = () => setClick(!click);
+
+  console.log(WindowHeight, WindowWidth);
 
   return (
     <MainContainer>
@@ -149,11 +144,14 @@ const Main = () => {
         <LogoComponent theme={click ? 'dark' : 'light'} />
         <SocialIcons theme={click ? 'dark' : 'light'} />
 
-        <Center click={click}>
+        <Center
+          style={{ top: WindowWidth <= 500 && click ? '92.5%' : '' }}
+          click={click}
+        >
           <YinYang
             onClick={() => handleClick()}
-            width={click ? 120 : 200}
-            height={click ? 120 : 200}
+            width={WindowWidth <= 500 ? (click ? 60 : 120) : 200}
+            height={WindowWidth <= 500 ? (click ? 60 : 120) : 200}
             fill="currentColor"
           />
           <span>click here</span>
