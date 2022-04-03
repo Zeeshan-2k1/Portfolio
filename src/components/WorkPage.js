@@ -19,6 +19,10 @@ const Box = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+
+  @media (max-width: 500px) {
+    height: 400vh;
+  }
 `;
 
 const Main = styled(motion.ul)`

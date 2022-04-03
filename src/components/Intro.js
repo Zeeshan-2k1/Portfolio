@@ -31,6 +31,12 @@ const Box = styled(motion.div)`
   border-right: 2px solid ${(props) => props.theme.text};
 
   z-index: 1;
+
+  @media (max-width: 500px) {
+    height: 45%;
+    top: 60%;
+    flex-wrap: wrap-reverse;
+  }
 `;
 const SubBox = styled.div`
   width: 50%;
@@ -44,6 +50,11 @@ const SubBox = styled.div`
     transform: translate(-50%, 0%);
     width: 100%;
     height: auto;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    background-color: currentColor;
   }
 `;
 

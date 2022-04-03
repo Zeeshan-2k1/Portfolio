@@ -113,6 +113,15 @@ const Center = styled.button`
     display: ${(props) => (props.click ? 'none' : 'inline-block')};
     padding-top: 1rem;
   }
+
+  @media (max-width: 500px) {
+    svg {
+      height: 60px;
+      width: 60px;
+    }
+
+    top: 92.5%;
+  }
 `;
 
 const DarkDiv = styled.div`
